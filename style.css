@@ -1,0 +1,213 @@
+body {
+    background-color: rgb(20, 20, 20);
+
+    margin: 0px;
+    padding-bottom: 60px;
+}
+
+.content-wrapper {
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    padding: 50px 50px 80px 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "IBM Plex Serif";
+    font-weight: 400;
+    color: rgba(225, 225, 205, 100%);
+
+    margin: 0;
+    margin-bottom: 60px;
+    margin-top: 100px;
+    line-height: 60px;
+
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.top-page-icon {
+    margin-bottom: -50px;
+    border-radius: 10px;
+    display: block;
+    width: 80px;
+    height: 80px;
+
+    transition:
+        background-color 100ms,
+        scale 50ms;
+}
+.top-page-icon img {
+    width: 80px;
+    height: 80px;
+}
+img {
+    -webkit-user-drag: none;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(225, 225, 205, 90%);
+
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 40px;
+}
+
+li {
+    list-style-type: "*  ";
+}
+
+li,
+p {
+    font-size: 16px;
+    font-family: "IBM Plex Mono";
+    color: rgba(225, 225, 205, 85%);
+
+    text-align: justify;
+
+    line-height: 28px;
+}
+
+li a,
+p a {
+    text-decoration: none;
+
+    transition:
+        background-color 100ms,
+        scale 50ms;
+
+    padding: 3px 6px 3px 6px;
+    margin: -6px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+li a:active,
+h1 a:active,
+p a:active {
+    scale: 90%;
+}
+
+/* NAV BUTTONS */
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.nav {
+    background-color: rgba(225, 225, 205, 5%);
+    backdrop-filter: blur(18px);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    position: fixed;
+    bottom: 30px;
+    margin: 0;
+    padding: 20px;
+
+    border-radius: 20px;
+    border: 1px solid rgba(225, 225, 205, 20%);
+
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 100%);
+}
+.nav li {
+    list-style: none;
+    font-size: 40px;
+    font-family: "IBM Plex Serif";
+    margin: 0px 5px 0px 5px;
+}
+.nav li:first-child {
+    margin-left: 0px;
+}
+.nav li:last-child {
+    margin-right: 0px;
+}
+.nav li a {
+    display: block;
+    padding: 0px;
+}
+.nav li a img {
+    width: 50px;
+    height: 50px;
+}
+
+/* COLORS */
+
+/* Blue */
+.blue {
+    color: rgba(143, 191, 220, 100%);
+}
+
+li a.blue:hover,
+h1 a.blue:hover,
+p a.blue:hover {
+    background-color: rgba(143, 191, 220, 20%);
+}
+
+/* Yellow */
+.yellow {
+    color: rgba(231, 171, 95, 100%);
+}
+
+li a.yellow:hover,
+h1 a.yellow:hover,
+p a.yellow:hover {
+    background-color: rgba(231, 171, 95, 20%);
+}
+
+/* Green */
+.green {
+    color: rgba(153, 171, 107, 100%);
+}
+
+li a.green:hover,
+h1 a.green:hover,
+p a.green:hover {
+    background-color: rgba(153, 171, 107, 20%);
+}
+
+/* Red */
+.red {
+    color: rgba(226, 106, 76, 100%);
+}
+
+li a.red:hover,
+h1 a.red:hover,
+p a.red:hover {
+    background-color: rgba(226, 106, 76, 20%);
+}
+
+/* White */
+.white {
+    color: rgba(225, 225, 205, 100%);
+}
+
+li a.white:hover,
+h1 a.white:hover,
+p a.white:hover {
+    background-color: rgba(225, 225, 205, 20%);
+}
+
+/* Different size screens */
+@media only screen and (max-width: 600px) {
+    article {
+        padding-top: 0px;
+    }
+    h1 {
+        margin-top: 50px;
+    }
+}
