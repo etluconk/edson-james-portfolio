@@ -5,9 +5,6 @@ body {
     padding-bottom: 60px;
 }
 
-.content {
-}
-
 main {
     display: flex;
     justify-content: center;
