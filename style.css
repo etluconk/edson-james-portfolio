@@ -104,8 +104,9 @@ p a:active {
     justify-content: center;
 }
 .nav {
-    background-color: rgba(225, 225, 205, 5%);
-    backdrop-filter: blur(18px);
+    z-index: 100;
+    background-color: rgba(20, 20, 20, 70%);
+    backdrop-filter: blur(15px);
 
     display: flex;
     justify-content: space-evenly;
