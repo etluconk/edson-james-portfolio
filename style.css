@@ -249,6 +249,16 @@ p a.white:hover {
     background-color: rgba(225, 225, 205, 20%);
 }
 
+/* MISC */
+.no-select {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Standard syntax */
+}
+
 /* Different size screens */
 @media only screen and (max-width: 600px) {
     article {
