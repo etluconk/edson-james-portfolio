@@ -19,8 +19,8 @@ article {
 
 h1 {
     font-size: 50px;
-    font-family: "IBM Plex Serif";
-    font-weight: 400;
+    font-family: "Inter";
+    font-weight: 500;
     color: rgba(225, 225, 205, 100%);
 
     margin: 0;
@@ -52,7 +52,7 @@ img {
 
 h2 {
     font-size: 25px;
-    font-family: "IBM Plex Mono";
+    font-family: "Inter";
     font-weight: 400;
     color: rgba(225, 225, 205, 90%);
 
@@ -62,16 +62,19 @@ h2 {
 }
 
 li {
-    list-style-type: "*  ";
+    list-style-type: "-  ";
 }
 
 li,
 p {
-    font-size: 16px;
-    font-family: "IBM Plex Mono";
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 350;
+    text-rendering: optimizeLegibility;
+    word-spacing: 2px;
     color: rgba(225, 225, 205, 85%);
 
-    text-align: justify;
+    /*text-align: justify;*/
 
     line-height: 27px;
 }
@@ -133,7 +136,7 @@ p a:active {
 .nav li {
     list-style: none;
     font-size: 40px;
-    font-family: "IBM Plex Serif";
+    font-family: "Inter";
     margin: 0px 5px 0px 5px;
 }
 .nav li:first-child {
@@ -183,7 +186,7 @@ p a:active {
 
     text-decoration: none;
     font-size: 25px;
-    font-family: "IBM Plex Mono";
+    font-family: "Inter";
     font-weight: 400;
     font-style: italic;
     color: rgba(225, 225, 205, 90%);
