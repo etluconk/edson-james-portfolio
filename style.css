@@ -25,7 +25,18 @@ article {
 
 h1 {
     font-size: 50px;
-    font-family: "Inter";
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     font-weight: 500;
     color: var(--text-color);
 
@@ -58,7 +69,18 @@ img {
 
 h2 {
     font-size: 25px;
-    font-family: "Inter";
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     font-weight: 400;
     color: var(--text-color);
 
@@ -73,9 +95,20 @@ li {
 
 li,
 p {
-    font-size: 18px;
-    font-family: "Inter";
-    font-weight: 350;
+    font-size: 17px;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
+    font-weight: 400;
     text-rendering: optimizeLegibility;
     word-spacing: 2px;
     color: var(--paragraph-color);
@@ -141,8 +174,19 @@ p a:active {
 }
 .nav li {
     list-style: none;
-    font-size: 40px;
-    font-family: "Inter";
+    font-size: 30px;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     margin: 0px 5px 0px 5px;
 }
 .nav li:first-child {
@@ -191,7 +235,18 @@ p a:active {
 
     text-decoration: none;
     font-size: 25px;
-    font-family: "Inter";
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Oxygen,
+        Ubuntu,
+        Cantarell,
+        "Open Sans",
+        "Helvetica Neue",
+        sans-serif;
     font-weight: 400;
     font-style: italic;
     color: var(--text-color);
