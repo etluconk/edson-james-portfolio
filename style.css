@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(15, 15, 15);
+    background-color: rgb(9.945, 14.025, 15.045);
 
     margin: 0px;
     padding-bottom: 60px;
@@ -114,7 +114,7 @@ p a:active {
 }
 .nav {
     z-index: 100;
-    background-color: rgba(20, 20, 20, 70%);
+    background-color: rgb(9.945, 14.025, 15.045, 70%);
     backdrop-filter: blur(15px);
 
     display: flex;
@@ -172,7 +172,7 @@ p a:active {
 .grid-item {
     aspect-ratio: 1 / 1;
 
-    background-color: rgba(20, 20, 20, 5%);
+    background-color: rgb(9.945, 14.025, 15.045, 5%);
     backdrop-filter: blur(18px);
 
     padding: 20px;
