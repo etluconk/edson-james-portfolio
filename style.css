@@ -170,7 +170,6 @@ p a:active {
     margin-top: 50px;
 }
 .grid-item {
-    background-color: red;
     aspect-ratio: 1 / 1;
 
     background-color: rgba(20, 20, 20, 5%);
