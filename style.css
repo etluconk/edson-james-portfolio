@@ -84,9 +84,11 @@ h2 {
     font-weight: 500;
     color: var(--text-color);
 
-    margin: 0;
-    /*margin-top: 50px;*/
-    line-height: 40px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    margin-top: 54px;
+    line-height: 27px;
 }
 
 li {
@@ -116,6 +118,8 @@ p {
     /*text-align: justify;*/
 
     line-height: 27px;
+    margin-top: 0;
+    /*margin-bottom: 27px;*/
 }
 
 li a,
