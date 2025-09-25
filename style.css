@@ -26,6 +26,7 @@ article {
 h1 {
     font-size: 40px;
     font-family:
+        "IBM Plex Serif",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
@@ -70,6 +71,7 @@ img {
 h2 {
     font-size: 17px;
     font-family:
+        "IBM Plex Serif",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
