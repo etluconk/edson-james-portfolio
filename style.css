@@ -1,345 +1,364 @@
 :root {
-    --text-color: #ffffffff;
-    --paragraph-color: #ffffffe0;
-    --border-color: #ffffff50;
+	--text-color: #ffffffff;
+	--paragraph-color: #ffffffe0;
+	--border-color: #ffffff50;
 }
 
 body {
-    background-color: rgb(9.945, 14.025, 15.045);
+	background-color: rgb(9.945, 14.025, 15.045);
 
-    margin: 0px;
-    padding-bottom: 60px;
+	margin: 0px;
+	padding-bottom: 60px;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 article {
-    padding: 50px 50px 80px 50px;
-    width: 100%;
-    max-width: 500px;
+	padding: 50px 50px 80px 50px;
+	width: 100%;
+	max-width: 500px;
 }
 
 h1 {
-    font-size: 40px;
-    font-family:
-        "IBM Plex Serif",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-weight: 500;
-    color: var(--text-color);
+	font-size: 40px;
+	font-family:
+		"IBM Plex Serif",
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+	font-weight: 500;
+	color: var(--text-color);
 
-    margin: 0;
-    margin-bottom: 60px;
-    margin-top: 100px;
-    line-height: 50px;
+	margin: 0;
+	margin-bottom: 60px;
+	margin-top: 100px;
+	line-height: 50px;
 
-    user-select: none;
-    -webkit-user-drag: none;
+	user-select: none;
+	-webkit-user-drag: none;
 }
+
 .top-page-icon {
-    margin-bottom: -50px;
-    border-radius: 10px;
-    display: block;
-    width: 80px;
-    height: 80px;
+	margin-bottom: -50px;
+	border-radius: 10px;
+	display: block;
+	width: 80px;
+	height: 80px;
 
-    transition:
-        background-color 100ms,
-        scale 50ms;
+	transition:
+		background-color 100ms,
+		scale 50ms;
 }
+
 .top-page-icon img {
-    width: 80px;
-    height: 80px;
+	width: 80px;
+	height: 80px;
 }
+
 img {
-    -webkit-user-drag: none;
+	-webkit-user-drag: none;
 }
 
 h2 {
-    font-size: 17px;
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-weight: 500;
-    color: var(--text-color);
+	font-size: 17px;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+	font-weight: 500;
+	color: var(--text-color);
 
-    border-bottom: 1px solid var(--border-color);
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-    margin-top: 54px;
-    line-height: 27px;
+	border-bottom: 1px solid var(--border-color);
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	margin-top: 54px;
+	line-height: 27px;
 }
 
 li {
-    list-style-type: "-  ";
+	list-style-type: "-  ";
 }
 
 li,
 p {
-    font-size: 17px;
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-    word-spacing: 2px;
-    color: var(--paragraph-color);
+	font-size: 17px;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+	font-weight: 300;
+	text-rendering: optimizeLegibility;
+	word-spacing: 2px;
+	color: var(--paragraph-color);
 
-    /*text-align: justify;*/
+	/*text-align: justify;*/
 
-    line-height: 27px;
-    margin-top: 0;
-    /*margin-bottom: 27px;*/
+	line-height: 27px;
+	margin-top: 0;
+	/*margin-bottom: 27px;*/
 }
 
 li a,
 p a {
-    text-decoration: none;
+	text-decoration: none;
 
-    transition:
-        background-color 100ms,
-        scale 50ms;
+	transition:
+		background-color 100ms,
+		scale 50ms;
 
-    padding: 3px 6px 3px 6px;
-    margin: -6px;
-    border-radius: 8px;
-    display: inline-block;
+	padding: 3px 6px 3px 6px;
+	margin: -6px;
+	border-radius: 8px;
+	display: inline-block;
 }
 
 li a:active,
 h1 a:active,
 p a:active {
-    scale: 90%;
+	scale: 90%;
 }
 
 /* NAV BUTTONS */
 
 .nav-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
+
 .nav {
-    z-index: 100;
-    background-color: rgb(9.945, 14.025, 15.045, 70%);
-    backdrop-filter: blur(15px);
+	z-index: 100;
+	background-color: rgb(9.945, 14.025, 15.045, 70%);
+	backdrop-filter: blur(15px);
 
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 
-    position: fixed;
-    bottom: 30px;
-    margin: 0;
-    padding: 20px;
+	position: fixed;
+	bottom: 30px;
+	margin: 0;
+	padding: 20px;
 
-    transition:
-        bottom 200ms,
-        box-shadow 200ms,
-        scale 200ms;
+	transition:
+		bottom 200ms,
+		box-shadow 200ms,
+		scale 200ms;
 
-    border-radius: 20px;
-    border: 1px solid rgba(225, 225, 205, 20%);
+	border-radius: 20px;
+	border: 1px solid rgba(225, 225, 205, 20%);
 
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 100%);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 100%);
 }
+
 .nav:hover {
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 100%);
-    scale: 105%;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 100%);
+	scale: 105%;
 }
+
 .nav li {
-    list-style: none;
-    font-size: 30px;
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    margin: 0px 5px 0px 5px;
+	list-style: none;
+	font-size: 30px;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+	margin: 0px 5px 0px 5px;
 }
+
 .nav li:first-child {
-    margin-left: 0px;
+	margin-left: 0px;
 }
+
 .nav li:last-child {
-    margin-right: 0px;
+	margin-right: 0px;
 }
+
 .nav li a {
-    display: block;
-    padding: 0px;
+	display: block;
+	padding: 0px;
 }
+
 .nav li a img {
-    width: 50px;
-    height: 50px;
+	width: 50px;
+	height: 50px;
 }
 
 /* GRID GALLERY */
 
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 15px;
-    margin: 0;
-    margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 15px;
+	margin: 0;
+	margin-top: 50px;
 }
+
 .grid-item {
-    aspect-ratio: 1 / 1;
+	aspect-ratio: 1 / 1;
 
-    background-color: rgb(9.945, 14.025, 15.045, 5%);
-    backdrop-filter: blur(18px);
+	background-color: rgb(9.945, 14.025, 15.045, 5%);
+	backdrop-filter: blur(18px);
 
-    padding: 20px;
+	padding: 20px;
 
-    transition:
-        bottom 200ms,
-        box-shadow 200ms,
-        scale 200ms;
+	transition:
+		bottom 200ms,
+		box-shadow 200ms,
+		scale 200ms;
 
-    border-radius: 20px;
-    border: 1px solid rgba(225, 225, 205, 20%);
+	border-radius: 20px;
+	border: 1px solid rgba(225, 225, 205, 20%);
 
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 50%);
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 50%);
 
-    /*Text*/
+	/*Text*/
 
-    text-decoration: none;
-    font-size: 25px;
-    font-family:
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Oxygen,
-        Ubuntu,
-        Cantarell,
-        "Open Sans",
-        "Helvetica Neue",
-        sans-serif;
-    font-weight: 300;
-    font-style: italic;
-    color: var(--text-color);
+	text-decoration: none;
+	font-size: 25px;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		Oxygen,
+		Ubuntu,
+		Cantarell,
+		"Open Sans",
+		"Helvetica Neue",
+		sans-serif;
+	font-weight: 300;
+	font-style: italic;
+	color: var(--text-color);
 
-    /* Image background */
-    background-size: 101%;
-    background-position: center;
+	/* Image background */
+	background-size: 101%;
+	background-position: center;
 }
+
 .grid-item:hover {
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 100%);
-    scale: 103%;
-    /*z-index: 20;*/
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 100%);
+	scale: 103%;
+	/*z-index: 20;*/
 }
 
 /* COLORS */
 
 /* Blue */
 .blue {
-    color: rgba(143, 191, 220, 100%);
+	color: rgba(143, 191, 220, 100%);
 }
 
 li a.blue:hover,
 h1 a.blue:hover,
 p a.blue:hover {
-    background-color: rgba(143, 191, 220, 20%);
+	background-color: rgba(143, 191, 220, 20%);
 }
 
 /* Yellow */
 .yellow {
-    color: rgba(231, 171, 95, 100%);
+	color: rgba(231, 171, 95, 100%);
 }
 
 li a.yellow:hover,
 h1 a.yellow:hover,
 p a.yellow:hover {
-    background-color: rgba(231, 171, 95, 20%);
+	background-color: rgba(231, 171, 95, 20%);
 }
 
 /* Green */
 .green {
-    color: rgba(153, 171, 107, 100%);
+	color: rgba(153, 171, 107, 100%);
 }
 
 li a.green:hover,
 h1 a.green:hover,
 p a.green:hover {
-    background-color: rgba(153, 171, 107, 20%);
+	background-color: rgba(153, 171, 107, 20%);
 }
 
 /* Red */
 .red {
-    color: rgba(226, 106, 76, 100%);
+	color: rgba(226, 106, 76, 100%);
 }
 
 li a.red:hover,
 h1 a.red:hover,
 p a.red:hover {
-    background-color: rgba(226, 106, 76, 20%);
+	background-color: rgba(226, 106, 76, 20%);
 }
 
 /* White */
 .white {
-    color: var(--text-color);
+	color: var(--text-color);
 }
 
 li a.white:hover,
 h1 a.white:hover,
 p a.white:hover {
-    background-color: rgba(225, 225, 205, 20%);
+	background-color: rgba(225, 225, 205, 20%);
 }
 
 /* MISC */
 .no-select {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Old Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none; /* Standard syntax */
+	-webkit-touch-callout: none;
+	/* iOS Safari */
+	-webkit-user-select: none;
+	/* Safari */
+	-khtml-user-select: none;
+	/* Konqueror HTML */
+	-moz-user-select: none;
+	/* Old Firefox */
+	-ms-user-select: none;
+	/* Internet Explorer/Edge */
+	user-select: none;
+	/* Standard syntax */
 }
 
 /* Different size screens */
 @media only screen and (max-width: 600px) {
-    article {
-        padding-top: 0px;
-    }
-    h1 {
-        margin-top: 50px;
-        font-size: 40px;
-    }
+	article {
+		padding-top: 0px;
+	}
+
+	h1 {
+		margin-top: 50px;
+		font-size: 40px;
+	}
 }
