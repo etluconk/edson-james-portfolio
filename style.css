@@ -21,7 +21,7 @@ main {
 article {
     padding: 50px 50px 80px 50px;
     width: 100%;
-    max-width: 500px;
+    max-width: 550px;
 }
 
 h1 {
@@ -103,7 +103,7 @@ li {
 
 li,
 p {
-    font-size: 18px;
+    font-size: 17px;
     font-family:
         "IBM Plex Sans",
         system-ui,
@@ -117,7 +117,7 @@ p {
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-    font-weight: 300;
+    font-weight: 350;
     text-rendering: optimizeLegibility;
     word-spacing: 2px;
     color: var(--paragraph-color);
