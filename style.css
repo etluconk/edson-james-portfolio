@@ -132,15 +132,18 @@ p {
 li a,
 p a {
     text-decoration: none;
+}
 
-    /* transition: */
-    /*     background-color 100ms, */
-    /*     scale 50ms; */
+li a:hover,
+p a:hover {
+    text-decoration: underline;
+}
 
-    padding: 3px 6px 3px 6px;
+.nav a {
     margin: -6px;
     border-radius: 8px;
     display: inline-block;
+    border: none;
 }
 
 .nav a:active,
@@ -289,9 +292,8 @@ h1 a:active {
     color: rgba(143, 191, 220, 100%);
 }
 
-li a.blue:hover,
 h1 a.blue:hover,
-p a.blue:hover {
+.nav a.blue:hover {
     background-color: rgba(143, 191, 220, 20%);
 }
 
@@ -300,9 +302,8 @@ p a.blue:hover {
     color: rgba(231, 171, 95, 100%);
 }
 
-li a.yellow:hover,
 h1 a.yellow:hover,
-p a.yellow:hover {
+.nav a.yellow:hover {
     background-color: rgba(231, 171, 95, 20%);
 }
 
@@ -311,9 +312,8 @@ p a.yellow:hover {
     color: rgba(153, 171, 107, 100%);
 }
 
-li a.green:hover,
 h1 a.green:hover,
-p a.green:hover {
+.nav a.green:hover {
     background-color: rgba(153, 171, 107, 20%);
 }
 
@@ -322,9 +322,8 @@ p a.green:hover {
     color: rgba(226, 106, 76, 100%);
 }
 
-li a.red:hover,
 h1 a.red:hover,
-p a.red:hover {
+.nav a.red:hover {
     background-color: rgba(226, 106, 76, 20%);
 }
 
@@ -333,9 +332,8 @@ p a.red:hover {
     color: var(--text-color);
 }
 
-li a.white:hover,
 h1 a.white:hover,
-p a.white:hover {
+.nav a.white:hover {
     background-color: rgba(225, 225, 205, 20%);
 }
 
