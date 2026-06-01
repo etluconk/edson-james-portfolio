@@ -120,6 +120,7 @@ p {
     font-weight: 350;
     text-rendering: optimizeLegibility;
     word-spacing: 2px;
+    text-align: justify;
     color: var(--paragraph-color);
 
     /*text-align: justify;*/
