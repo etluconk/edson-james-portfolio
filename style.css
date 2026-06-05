@@ -139,6 +139,7 @@ p a {
 li a:hover,
 p a:hover {
     text-decoration: underline;
+    text-decoration-thickness: 1.5px;
 }
 
 .nav a {
