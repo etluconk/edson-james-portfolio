@@ -288,6 +288,16 @@ h1 a:active {
     /*z-index: 20;*/
 }
 
+.showcase-img-container {
+    width: 100%;
+    display: flex;
+}
+
+.showcase-img {
+    max-width: 300px;
+    margin-bottom: 60px;
+}
+
 /* COLORS */
 
 /* Blue */
