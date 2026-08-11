@@ -3,12 +3,8 @@
     --paragraph-color: #CECDC3;
     --border-color: #CECDC355;
     --border-color-dim: #CECDC333;
-    --background-color: #0F0F0F
+    --background-color: #0D0D0D;
 }
-
-
-/* Different size screens */
-@media only screen and (max-width: 600px) {}
 
 body {
     background-color: var(--background-color);
@@ -26,11 +22,14 @@ main {
 article {
     padding: 50px 50px 80px 50px;
     width: 100%;
-    max-width: 550px;
+    max-width: 500px;
+
+    transition:
+        padding 200ms;
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 40px;
     font-family:
         "IBM Plex Serif",
         system-ui,
@@ -49,7 +48,7 @@ h1 {
 
     margin: 0;
     margin-bottom: 60px;
-    margin-top: 100px;
+    margin-top: 50px;
     line-height: 50px;
 
     /* user-select: none; */
@@ -169,16 +168,17 @@ h1 a:active {
     backdrop-filter: blur(15px);
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 
     position: fixed;
-    bottom: 30px;
+    bottom: 20px;
     margin: 0;
     padding: 20px;
 
     transition:
         bottom 200ms,
         box-shadow 200ms,
+        width 200ms,
         scale 200ms;
 
     border-radius: 20px;
@@ -368,7 +368,8 @@ h1 a.white:hover,
 }
 
 /* Different size screens */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px),
+(max-height: 700px) {
     :root {
         background-color: #000000;
     }
@@ -379,13 +380,27 @@ h1 a.white:hover,
 
     .nav {
         background-color: #000000;
-        border: 1px solid #CECDC344;
+        border: none;
+        border-top: 1px solid #CECDC344;
+
+        box-shadow: none;
+        border-radius: 0px;
+
+        bottom: 0px;
+        width: 100%;
+
+        padding: 16px;
+    }
+
+    .nav:hover {
+        box-shadow: none;
+        scale: 100%;
     }
 
     article {
         padding-top: 0px;
-        padding-left: 35px;
-        padding-right: 35px;
+        padding-left: 27px;
+        padding-right: 27px;
     }
 
     h1 {
