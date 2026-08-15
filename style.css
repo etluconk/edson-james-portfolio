@@ -129,7 +129,9 @@ h2 {
 }
 
 li {
-    list-style-type: "•  ";
+    /* list-style-type: "•  "; */
+    list-style-type: "∗  ";
+    /* list-style-type: "★  "; */
 }
 
 li::marker {
