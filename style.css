@@ -46,15 +46,14 @@ article {
     max-width: 500px;
 
     padding-top: 0px;
-    padding-bottom: 60px;
+    padding-bottom: calc(60px + (100vh - 100dvh));
     padding-left: 27px;
     padding-right: 27px;
 }
 
 h1 {
     font-size: 40px;
-    font-family:
-        "IBM Plex Serif",
+    font-family: "IBM Plex Serif",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
@@ -85,8 +84,7 @@ h1 {
     width: 80px;
     height: 80px;
 
-    transition:
-        background-color 100ms,
+    transition: background-color 100ms,
         scale 50ms;
 }
 
@@ -101,8 +99,7 @@ img {
 
 h2 {
     font-size: 24px;
-    font-family:
-        "IBM Plex Serif",
+    font-family: "IBM Plex Serif",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
@@ -140,8 +137,7 @@ li ul {
 li,
 p {
     font-size: 17px;
-    font-family:
-        "IBM Plex Sans",
+    font-family: "IBM Plex Sans",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
@@ -185,8 +181,7 @@ p a:hover {
     display: inline-block;
     border: none;
 
-    transition:
-        background-color 50ms;
+    transition: background-color 50ms;
 }
 
 .nav a:active,
@@ -222,13 +217,14 @@ h1 a:active {
     max-width: calc(100vw - 108px);
 
     box-shadow: 0px 25px 40px 40px #000000;
+
+    touch-action: none;
 }
 
 .nav li {
     list-style: none;
     font-size: 30px;
-    font-family:
-        "IBM Plex Sans",
+    font-family: "IBM Plex Sans",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
@@ -280,8 +276,7 @@ h1 a:active {
 
     padding: 20px;
 
-    transition:
-        bottom 200ms,
+    transition: bottom 200ms,
         box-shadow 200ms,
         scale 200ms;
 
@@ -294,8 +289,7 @@ h1 a:active {
 
     text-decoration: none;
     font-size: 25px;
-    font-family:
-        "IBM Plex Sans",
+    font-family: "IBM Plex Sans",
         system-ui,
         -apple-system,
         BlinkMacSystemFont,
