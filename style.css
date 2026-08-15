@@ -36,6 +36,8 @@ main {
     overflow-y: auto;
 
     margin: 0px;
+
+    touch-action: none;
 }
 
 article {
