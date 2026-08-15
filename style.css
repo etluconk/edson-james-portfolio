@@ -1,19 +1,22 @@
 :root {
     --heading-dark: #f5f4ebdd;
     --paragraph-dark: #f5f4ebdd;
+    --bullet-dark: #f5f4eb77;
     --border-dark: #CECDC355;
     --background-dark: #000000;
 
     --heading-light: #000000f0;
     --paragraph-light: #000000f0;
-    --border-light: #00000025;
+    --bullet-light: #00000088;
+    --border-light: #00000044;
     --background-light: #f5f4eb;
 
-    /* Dark mode by default, will use light mode if the
-     user's operating system requests it (look at bottom
+    /* Dark mode by default; will use light mode if the
+     operating system requests it (look at bottom
      of file for the media query) */
     --heading-color: var(--heading-dark);
     --paragraph-color: var(--paragraph-dark);
+    --bullet-color: var(--bullet-dark);
     --border-color: var(--border-dark);
     --background-color: var(--background-dark);
 }
@@ -29,12 +32,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: calc(100vh - 70px);
 }
 
 article {
     width: 100%;
     max-width: 500px;
-    margin-top: 20px;
 
     padding-top: 0px;
     padding-bottom: 80px;
@@ -62,7 +65,7 @@ h1 {
 
     margin: 0;
     margin-bottom: 32px;
-    margin-top: 60px;
+    margin-top: 90px;
     line-height: 50px;
 
     /* user-select: none; */
@@ -105,7 +108,7 @@ h2 {
         "Open Sans",
         "Helvetica Neue",
         sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--heading-color);
 
     border-bottom: 1px solid var(--border-color);
@@ -117,6 +120,10 @@ h2 {
 
 li {
     list-style-type: "•  ";
+}
+
+li::marker {
+    color: var(--bullet-color);
 }
 
 li,
@@ -140,7 +147,7 @@ p {
     word-spacing: 2px;
     color: var(--paragraph-color);
 
-    line-height: 26px;
+    line-height: 25px;
     margin-top: 0;
     /*margin-bottom: 27px;*/
 }
@@ -191,18 +198,18 @@ h1 a:active {
     justify-content: center;
 
     position: fixed;
-    bottom: -80px;
-    margin: 0;
+    bottom: 0px;
+    margin: 0px;
     padding: 16px;
-
-    height: 120px;
+    padding-left: 27px;
+    padding-right: 27px;
 
     border-top: 1px solid var(--border-color);
 
-    width: 100%;
-    max-width: 500px;
+    width: 480px;
+    max-width: calc(100vw - 108px);
 
-    box-shadow: 0px -20px 50px rgba(0, 0, 0, 100%);
+    box-shadow: 0px 25px 40px 40px #000000;
 }
 
 .nav li {
@@ -381,10 +388,27 @@ h1 a.white:hover,
     /* Standard syntax */
 }
 
+@media screen and (max-height: 700px),
+(max-width: 700px) {
+    article {
+        min-height: calc(100vh - 160px);
+    }
+
+    h1 {
+        margin-top: 50px;
+    }
+
+    .nav {
+        width: 446px;
+        max-width: calc(100vw - 108px);
+    }
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --heading-color: var(--heading-light);
         --paragraph-color: var(--paragraph-light);
+        --bullet-color: var(--bullet-light);
         --border-color: var(--border-light);
         --background-color: var(--background-light);
     }
