@@ -1,15 +1,25 @@
 :root {
-    --text-color: #f5f4ebdd;
-    --paragraph-color: #f5f4ebdd;
-    --border-color: #CECDC355;
-    --border-color-dim: #CECDC333;
-    --background-color: #0F0F0F;
+    --heading-dark: #f5f4ebdd;
+    --paragraph-dark: #f5f4ebdd;
+    --border-dark: #CECDC355;
+    --background-dark: #000000;
 
-    background-color: #000000;
+    --heading-light: #000000f0;
+    --paragraph-light: #000000f0;
+    --border-light: #00000025;
+    --background-light: #f5f4eb;
+
+    /* Dark mode by default, will use light mode if the
+     user's operating system requests it (look at bottom
+     of file for the media query) */
+    --heading-color: var(--heading-dark);
+    --paragraph-color: var(--paragraph-dark);
+    --border-color: var(--border-dark);
+    --background-color: var(--background-dark);
 }
 
 body {
-    background-color: #000000;
+    background-color: var(--background-color);
 
     margin: 0px;
     padding-bottom: 60px;
@@ -48,7 +58,7 @@ h1 {
         "Helvetica Neue",
         sans-serif;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--heading-color);
 
     margin: 0;
     margin-bottom: 32px;
@@ -96,7 +106,7 @@ h2 {
         "Helvetica Neue",
         sans-serif;
     font-weight: 500;
-    color: var(--text-color);
+    color: var(--heading-color);
 
     border-bottom: 1px solid var(--border-color);
     padding-bottom: 10px;
@@ -174,7 +184,7 @@ h1 a:active {
 
 .nav {
     z-index: 100;
-    background-color: #000000;
+    background-color: var(--background-color);
     backdrop-filter: blur(15px);
 
     display: flex;
@@ -242,6 +252,7 @@ h1 a:active {
     margin-top: 50px;
 }
 
+/* Kinda unused lowk */
 .grid-item {
     aspect-ratio: 1 / 1;
 
@@ -279,7 +290,7 @@ h1 a:active {
         sans-serif;
     font-weight: 300;
     font-style: italic;
-    color: var(--text-color);
+    color: var(--paragraph-color);
 
     /* Image background */
     background-size: 101%;
@@ -346,7 +357,7 @@ h1 a.red:hover,
 
 /* White */
 .white {
-    color: var(--text-color);
+    color: var(--heading-color);
 }
 
 h1 a.white:hover,
@@ -368,4 +379,42 @@ h1 a.white:hover,
     /* Internet Explorer/Edge */
     user-select: none;
     /* Standard syntax */
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --heading-color: var(--heading-light);
+        --paragraph-color: var(--paragraph-light);
+        --border-color: var(--border-light);
+        --background-color: var(--background-light);
+    }
+
+    .nav {
+        box-shadow: none;
+        border-top-width: 2px;
+    }
+
+    h2 {
+        border-bottom-width: 2px;
+    }
+
+    .white {
+        filter: brightness(30%);
+    }
+
+    .red {
+        filter: brightness(70%) saturate(170%);
+    }
+
+    .blue {
+        filter: brightness(70%) saturate(200%);
+    }
+
+    .green {
+        filter: brightness(70%) saturate(200%);
+    }
+
+    .yellow {
+        filter: brightness(70%) saturate(200%);
+    }
 }
