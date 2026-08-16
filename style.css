@@ -35,7 +35,7 @@ main {
     justify-content: center;
     /* align-items: center; */
     /* min-height: calc(100vh - 70px); */
-    height: calc(100vh - 65px);
+    height: calc(100vh - 50px);
     overflow-y: auto;
 
     margin: 0px;
@@ -121,7 +121,7 @@ h2 {
     font-weight: 400;
     color: var(--heading-color);
 
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
     padding-bottom: 10px;
     margin-bottom: 10px;
     margin-top: 57px;
@@ -220,7 +220,7 @@ h1 a:active {
     padding-left: 27px;
     padding-right: 27px;
 
-    border-top: 1px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
 
     width: 480px;
     max-width: calc(100vw - 108px);
@@ -436,11 +436,6 @@ h1 a.white:hover,
 
     .nav {
         box-shadow: none;
-        border-top-width: 2px;
-    }
-
-    h2 {
-        border-bottom-width: 2px;
     }
 
     .white {
