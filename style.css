@@ -31,17 +31,19 @@ body {
 }
 
 main {
+    position: relative;
     display: flex;
     justify-content: center;
     /* align-items: center; */
     /* min-height: calc(100vh - 70px); */
     height: calc(100vh - 50px);
-    overflow-y: auto;
 
     margin: 0px;
 
     touch-action: none;
     overscroll-behavior: none;
+
+    overflow: hidden;
 }
 
 article {
@@ -56,6 +58,30 @@ article {
     padding-left: 27px;
     padding-right: 27px;
     overscroll-behavior: contain;
+}
+
+.decor {
+    width: calc(100dvw / 2 - 270px);
+    max-width: 600px;
+    height: auto;
+
+    position: absolute;
+
+    min-height: 0;
+    min-width: 0;
+}
+
+.decor path {
+    vector-effect: non-scaling-stroke;
+    stroke-width: 5px !important;
+}
+
+.decor-left {
+    right: calc(100dvw / 2 + 275px);
+}
+
+.decor-right {
+    left: calc(100dvw / 2 + 275px);
 }
 
 h1 {
@@ -229,7 +255,7 @@ h1 a:active {
     width: 480px;
     max-width: calc(100vw - 108px);
 
-    box-shadow: 0px 25px 40px 40px #000000;
+    box-shadow: 0px calc(100dvw - 30px) 40px 100dvw #000000;
 
     touch-action: none;
     overscroll-behavior: none;
@@ -429,6 +455,22 @@ h1 a.white:hover,
     }
 }
 
+@media screen and (max-width: 90dvh),
+(min-height: 2200px),
+(max-width: 1200px) {
+    .decor {
+        display: none !important;
+    }
+}
+
+.light-only {
+    display: none;
+}
+
+.dark-only {
+    display: block;
+}
+
 @media (prefers-color-scheme: light) {
     :root {
         --heading-color: var(--heading-light);
@@ -439,7 +481,7 @@ h1 a.white:hover,
     }
 
     .nav {
-        box-shadow: none;
+        box-shadow: 0px calc(100dvw - 30px) 40px 100dvw var(--background-light);
     }
 
     .white {
@@ -460,5 +502,13 @@ h1 a.white:hover,
 
     .yellow {
         filter: brightness(60%) saturate(250%);
+    }
+
+    .light-only {
+        display: block;
+    }
+
+    .dark-only {
+        display: none;
     }
 }
